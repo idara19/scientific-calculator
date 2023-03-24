@@ -13,7 +13,7 @@ buttons.forEach(button => {
         screenValue = ''
         display.value = ''  
    }else if(button.textContent == 'DE'){
-    screenValue = screenValue.slice(1)
+    screenValue = screenValue.slice(0,-1)
         display.value = screenValue 
     } else if(button.textContent == '√'){
     screenValue = Math.sqrt(screenValue)
